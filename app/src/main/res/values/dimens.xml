@@ -1,0 +1,12 @@
+<resources>
+
+    <dimen name="textsize_smaller3">16sp</dimen>
+    <dimen name="textsize_smaller2">18sp</dimen>
+    <dimen name="textsize_smaller1">20sp</dimen>
+    <dimen name="textsize_normal">22sp</dimen>
+    <dimen name="textsize_larger1">24sp</dimen>
+    <dimen name="textsize_larger2">28sp</dimen>
+    <dimen name="textsize_larger3">32sp</dimen>
+    <dimen name="textsize_largest">36sp</dimen>
+
+</resources>

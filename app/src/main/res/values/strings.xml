@@ -1,0 +1,27 @@
+<resources>
+    <!--<string name="app_name">Admin</string>-->
+    <string name="login_progress">กรุณารอสักครู่</string>
+    <string name="dialog_action_ok">ตกลง</string>
+    <string name="dialog_action_cancel">ยกเลิก</string>
+    <string name="dialog_error_title">พบปัญหา</string>
+    <string name="dialog_message_waiting">กรุณารอสักครู่</string>
+    <string name="dialog_title_waiting">กำลังดำเนินการ</string>
+    <string name="login_hint_user_id">รหัสพนักงาน</string>
+    <string name="login_hint_password">รหัสผ่าน</string>
+    <string name="button_action_activate">เปิดใช้งานอุปกรณ์</string>
+    <string name="button_action_deactivate">ปิดใช้งานอุปกรณ์</string>
+    <string name="login_dialog_input_empty">กรุณาใส่รหัสพนักงานและรหัสผ่านเพื่อเปิดใช้งาน</string>
+    <string name="activate_device_complete">ลงทะเบียนอุปกรณ์เรียบร้อยแล้ว</string>
+    <string name="permission_location_rationale">กรุณาเปิดสิทธิ์ Location เพื่อการเปิดใช้งานอุปกรณ์</string>
+    <string name="button_allow">อนุญาต</string>
+    <string name="button_deny">ปฏิเสธ</string>
+    <string name="button_action_logout">ออกจากระบบ</string>
+    <string name="button_action_back_to_main_menu">กลับสู่่หน้าหลัก</string>
+    <string name="activate_complete">เปิดใช้งานอุปกรณ์เรียบร้อยแล้ว</string>
+    <string name="button_action_login">เข้าสู่ระบบ</string>
+    <string name="text_activation_complete">อุปกรณ์นี้ได้รับการลงทะเบียนเรียบร้อยแล้ว</string>
+    <string name="deactivate_dialog_title">คุณต้องการปิดการใช้งานอุปกรณ์นี้ใช่หรือไม่?</string>
+    <string name="deactivate_dialog_detail">คุณจะไม่สามารถใช้งานแอปพลิเคชั่นภายในอุปกรณ์นี้ได้ หลังจากปิดการใช้งานแล้ว</string>
+    <string name="dialog_action_deactivate">ปิดการใช้งาน</string>
+
+</resources>

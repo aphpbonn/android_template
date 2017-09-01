@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    >
+
+    <LinearLayout
+        android:id="@+id/layout_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        app:layout_marginTopPercent="25%"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Goverment Savings Bank"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_larger3"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Device activation"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_larger1"
+            android:layout_marginTop="15dp"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_devide_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/layout_title"
+        android:background="@android:color/white"
+        android:layout_marginTop="30dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout_input"
+        android:layout_width="450dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/view_devide_line"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+
+        <EditText
+            android:id="@+id/text_input_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="@dimen/textsize_normal"
+            android:ellipsize="start"
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:hint="@string/login_hint_user_id"
+            android:background="@drawable/editext_background"
+            />
+        <View
+            android:id="@+id/view_devide_line_2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"
+            />
+
+        <EditText
+            android:id="@+id/text_input_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/editext_background"
+            android:ellipsize="start"
+            android:hint="@string/login_hint_password"
+            android:inputType="textPassword"
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:textSize="@dimen/textsize_normal"
+            />
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            style="@android:style/Widget.Material.Button"
+            android:text="@string/button_action_login"
+            android:textSize="@dimen/textsize_normal"
+            android:textColor="@color/textGreyLight"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorButtonActivation"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_app_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GSB Call Center 1136"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/textsize_smaller2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        />
+
+</android.support.percent.PercentRelativeLayout>
