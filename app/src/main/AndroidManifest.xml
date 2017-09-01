@@ -24,15 +24,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activate.main.MainActivity"/>
-        <activity android:name=".ui.activate.login.LoginActivity"
-            android:windowSoftInputMode="stateHidden"
-            >
-        </activity>
-        <activity android:name=".ui.activate.terms.TermsActivity"
-            android:windowSoftInputMode="stateHidden"
-            />
-        <activity android:name=".ui.activate.activatecomplete.ActivateCompleteActivity"/>
+        <activity android:name=".ui.main.MainActivity"/>
+        <activity android:name=".ui.activate.login.LoginActivity"/>
     </application>
 
 </manifest>

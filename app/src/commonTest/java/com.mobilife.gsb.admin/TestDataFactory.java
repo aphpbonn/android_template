@@ -2,10 +2,8 @@ package com.mobilife.gsb.admin;
 
 import com.mobilife.gsb.admin.data.model.Login;
 import com.mobilife.gsb.admin.data.model.ServerError;
-import com.mobilife.gsb.admin.data.model.Session;
 import com.mobilife.gsb.admin.data.model.Token;
 import com.mobilife.gsb.admin.data.model.User;
-import com.mobilife.gsb.admin.data.remote.response.ActivateResponse;
 import com.mobilife.gsb.admin.data.remote.response.LoginResponse;
 
 import okhttp3.MediaType;

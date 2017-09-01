@@ -2,7 +2,6 @@ package com.mobilife.gsb.admin.ui.activate.login;
 
 import com.mobilife.gsb.admin.TestDataFactory;
 import com.mobilife.gsb.admin.data.DataManager;
-import com.mobilife.gsb.admin.data.model.Session;
 import com.mobilife.gsb.admin.data.model.User;
 import com.mobilife.gsb.admin.data.remote.ErrorHandler;
 import com.mobilife.gsb.admin.util.RxSchedulersOverrideRule;

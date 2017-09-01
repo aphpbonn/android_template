@@ -1,6 +1,7 @@
 package com.mobilife.gsb.admin.ui.activate.login;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -8,6 +9,7 @@ import com.mobilife.gsb.admin.R;
 import com.mobilife.gsb.admin.data.model.User;
 import com.mobilife.gsb.admin.ui.base.BaseActivity;
 import com.mobilife.gsb.admin.ui.base.BaseDialog;
+import com.mobilife.gsb.admin.ui.main.MainActivity;
 import com.mobilife.gsb.admin.util.KeyboardHandler;
 
 import javax.inject.Inject;
@@ -50,11 +52,11 @@ public class LoginActivity extends BaseActivity implements LoginActivityView {
 
     @Override
     public void goToMainPage(User user) {
-//        Intent intent = new Intent(this, MainActivity.class);
-//        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-//        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//        startActivity(intent);
-//        finish();
+        Intent intent = new Intent(this, MainActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+        finish();
     }
 
     @Override

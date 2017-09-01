@@ -4,11 +4,8 @@ import android.location.Location;
 
 import com.mobilife.gsb.admin.TestDataFactory;
 import com.mobilife.gsb.admin.data.local.DeviceHelper;
-import com.mobilife.gsb.admin.data.local.SessionHelper;
 import com.mobilife.gsb.admin.data.model.MyLocation;
-import com.mobilife.gsb.admin.data.model.Session;
 import com.mobilife.gsb.admin.data.remote.request.ActivateRequest;
-import com.mobilife.gsb.admin.data.remote.request.LoginRequest;
 import com.mobilife.gsb.admin.data.remote.response.LoginResponse;
 import com.mobilife.gsb.admin.data.remote.service.AuthenticationService;
 import com.mobilife.gsb.admin.data.remote.service.ContentService;
@@ -20,8 +17,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
-
-import java.util.List;
 
 import pl.charmas.android.reactivelocation.ReactiveLocationProvider;
 import rx.Observable;

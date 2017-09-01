@@ -8,6 +8,7 @@ import com.mobilife.gsb.admin.data.remote.ServiceFactory;
 import com.mobilife.gsb.admin.data.remote.mock.AuthenticationServiceMock;
 import com.mobilife.gsb.admin.data.remote.service.AuthenticationService;
 import com.mobilife.gsb.admin.data.remote.service.ContentService;
+import com.mobilife.gsb.admin.data.remote.service.GithubService;
 import com.mobilife.gsb.admin.injection.ApplicationContext;
 
 import javax.inject.Singleton;
@@ -15,7 +16,7 @@ import javax.inject.Singleton;
 import dagger.Module;
 import dagger.Provides;
 import data.configuration.EnvConstant;
-import pl.charmas.android.reactivelocation.ReactiveLocationProvider;
+//import pl.charmas.android.reactivelocation.ReactiveLocationProvider;
 
 /**
  * Provide application-level dependencies.
@@ -40,10 +41,10 @@ public class ApplicationModule {
         return mApplication;
     }
 
-    @Provides
-    ReactiveLocationProvider provideLocationService() {
-        return new ReactiveLocationProvider(mApplication);
-    }
+    //@Provides
+    //ReactiveLocationProvider provideLocationService() {
+    //    return new ReactiveLocationProvider(mApplication);
+    //}
 
     @Provides
     @Singleton
@@ -54,6 +55,18 @@ public class ApplicationModule {
 
         return ServiceFactory.createService(AuthenticationService.class,
                 EnvConstant.SERVER_URL,
+                mApplication);
+    }
+
+    @Provides
+    @Singleton
+    GithubService provideGithubService() {
+//        if(BuildConfig.MOCK_VERSION){
+//            return new AuthenticationServiceMock();
+//        }
+
+        return ServiceFactory.createService(GithubService.class,
+                "https://api.github.com/",
                 mApplication);
     }
 

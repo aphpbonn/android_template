@@ -5,7 +5,6 @@ import android.os.Build;
 
 import com.mobilife.gsb.admin.AdminApplication;
 import com.mobilife.gsb.admin.BuildConfig;
-import com.mobilife.gsb.admin.data.local.SessionHelper;
 
 import java.io.IOException;
 
@@ -23,8 +22,8 @@ public class HeaderInterceptor implements Interceptor {
 
     Context context;
 
-    @Inject
-    SessionHelper sessionHelper;
+//    @Inject
+//    SessionHelper sessionHelper;
 
     public HeaderInterceptor(Context context) {
         AdminApplication.get(context).getComponent().inject(this);
@@ -35,13 +34,13 @@ public class HeaderInterceptor implements Interceptor {
     public Response intercept(Chain chain) throws IOException {
 
         Request original = chain.request();
-        Request request = createRequestWithAuthorization(original, sessionHelper);
+        Request request = createRequestWithAuthorization(original);
         Response response = chain.proceed(request);
 
         return response;
     }
 
-    private Request createRequestWithAuthorization(Request original, SessionHelper sessionHelper){
+    private Request createRequestWithAuthorization(Request original){
         Request.Builder builder = original.newBuilder();
 
         builder.header(
